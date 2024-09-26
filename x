@@ -1,22 +1,218 @@
-Seu código HTML está muito bem estruturado e as correções que você aplicou melhoraram a legibilidade e a semântica. Aqui estão algumas observações e sugestões adicionais para aprimorar ainda mais seu código:
+Ótimo! Vamos começar a estilizar seu portfólio com CSS. Abaixo, apresento um exemplo básico de CSS que você pode usar como ponto de partida. Este CSS inclui estilos para o layout geral, tipografia, botões, formulários e o modal que você implementou.
 
-### 4. **Consistência nos Nomes de Classes e IDs**
-- **Nomenclatura**: Mantenha a consistência na nomenclatura das classes e IDs. Por exemplo, você usa "portfolio-2" e "portfolio-3" para os artigos, mas poderia ser mais consistente usando "portfolio-item-2" e "portfolio-item-3".
+### Exemplo de CSS para o Portfólio
+/* Estilos Gerais */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
 
-### 5. **Remoção de Tags Não Necessárias**
-- **Tags Vazias**: Você tem algumas tags  `<div>`  que não estão sendo usadas corretamente. Por exemplo, há uma  `<div>`  fechando um bloco que não foi aberto. Remova essas tags para limpar o código.
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
 
-### Exemplo de Melhorias
-Aqui está uma versão revisada de um trecho do seu código, incorporando algumas das sugestões acima:
-<!--Conteúdo Sobre-->
-<section class="about" id="about">
-    <h2 class="sobre-container">Desenvolvimento & Tecnologias</h2>
-    <p>ISB Dev</p>
-    <p>Olá! Meu nome é Iuri Brito e sou um apaixonado por tecnologia e desenvolvimento web. Desde jovem, sempre tive um fascínio por como as coisas funcionam por trás das telas, e foi essa curiosidade que me levou a me tornar um desenvolvedor web.</p>
-    <p>Atualmente, possuo experiência na área, onde tive a oportunidade de trabalhar em uma variedade de projetos, desde pequenos sites pessoais até aplicações web complexas para empresas. Minha expertise inclui tecnologias como HTML, CSS, JavaScript, além de frameworks modernos como React e Node.js.</p>
-    <p>Acredito que um bom desenvolvimento web vai além do código; ele deve oferecer uma experiência intuitiva e agradável para o usuário. Por isso, busco sempre entender as necessidades dos meus clientes e transformar suas ideias em soluções funcionais e esteticamente agradáveis.</p>
-    <p>Quando não estou programando, gosto de praticar esportes, jogar, assistir filmes e séries e viajar, o que me ajuda a manter a mente aberta e sempre em busca de novas inspirações.</p>
-    <p>Estou sempre aberto a novas oportunidades e colaborações. Se você está procurando um desenvolvedor web dedicado, não hesite em entrar em contato!</p>
-</section>
+.menu-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu-principal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-principal li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-principal a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-principal a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos do Conteúdo Principal */
+.plano-de-fundo-container {
+    position: relative;
+}
+
+.fundo {
+    width: 100%;
+    height: auto;
+}
+
+.nome-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nome {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.sobrenome {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.profissao {
+    font-size: 1.5em;
+    color: #666;
+}
+
+/* Estilos dos Botões */
+.botao {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.botao-acesso {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botao-acesso:hover {
+    background: #0056b3;
+}
+
+/* Estilos das Redes Sociais */
+.redes-sociais {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.redes-sociais ul {
+    list-style: none;
+    padding: 0;
+}
+
+.redes-sociais li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Estilos das Seções */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Estilos do Formulário */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botao-enviar {
+    background: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-enviar:hover {
+    background: #218838;
+}
+
+/* Estilos do Modal */
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed; /* Fixa o modal na tela */
+    z-index: 1000; /* Coloca o modal acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Adiciona rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+}
+
+.modal-content {
+    background-color: #fefefe; /* Fundo do conteúdo do modal */
+    margin: 15% auto; /* Margem centralizada */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #888; /* Borda do modal */
+    width: 80%; /* Largura do modal */
+}
+
+.close {
+    color: #aaa; /* Cor do botão de fechar */
+    float: right; /* Alinha o botão à direita */
+    font-size: 28px; /* Tamanho do botão de fechar */
+    font-weight: bold; /* Negrito */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Muda a cor ao passar o mouse */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+/* Estilos do Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
+### Explicação dos Estilos
+
+1. **Estilos Gerais**: Define a fonte padrão, margens e cor do texto.
+2. **Header e Menu**: Estiliza o cabeçalho e o menu de navegação, com cores e espaçamentos.
+3. **Conteúdo Principal**: Estiliza o fundo, o nome e a profissão, centralizando o texto.
+4. **Botões**: Define estilos para os botões, incluindo efeitos de hover.
+5. **Seções**: Adiciona espaçamento e formatação para as seções do portfólio.
+6. **Formulário**: Estiliza o formulário de contato, incluindo campos e botões.
+7. **Modal**: Define estilos para o modal, incluindo o fundo e o conteúdo.
+8. **Rodapé**: Estiliza o rodapé com alinhamento central e cores.
+
+### Como Aplicar o CSS
+
+1. **Crie um arquivo CSS**: Salve o código CSS em um arquivo chamado  `style.css`  (ou outro nome à sua escolha).
+2. **Link o CSS ao HTML**: Certifique-se de que o arquivo CSS esteja vinculado corretamente no seu arquivo HTML, como você já fez:
+<link rel="stylesheet" type="text/css" href="./css/base.css">
+3. **Teste e Ajuste**: Abra seu portfólio em um navegador e veja como ele fica. Você pode ajustar os estilos conforme necessário para atender às suas preferências.
+
 ### Conclusão
-Seu código está muito próximo de ser ideal! Essas são apenas sugestões de refinamento. Se você tiver mais alguma dúvida ou precisar de ajuda com o CSS (base.css) ou outro aspecto do seu projeto, sinta-se à vontade para perguntar. Ótimo trabalho até agora!
+
+Esses estilos são um ponto de partida e podem ser personalizados de acordo com suas necessidades e preferências de design. Se você tiver alguma dúvida ou precisar de mais assistência na estilização, fique à vontade para perguntar!
