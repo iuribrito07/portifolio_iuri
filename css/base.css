@@ -232,6 +232,76 @@ h2 {
     border-radius: 10px;
 }
 
+/*Estilos resumo*/
+
+.resume {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.programing-languages, .frameworks-libraries {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.frameworks-libraries {
+    margin-right: 0;
+}
+
+.habilidades, .habilidades-extras {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skills-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-container li {
+    margin: 5px 0;
+}
+
+.skills-container a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.skills-container a:hover {
+    color: #0056b3;
+}
+
+.frameworks-libraries ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.frameworks-libraries li {
+    margin: 5px 0;
+}
+
+.frameworks-libraries a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.frameworks-libraries a:hover {
+    color: #0056b3;
+}
+
+
 /*Estilos formulário */
 
 .contact-container {

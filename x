@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 Seu código HTML e CSS já está bastante estruturado e segue boas práticas. No entanto, sempre há espaço para melhorias e otimizações. Aqui estão algumas sugestões que podem ajudar a aprimorar seu portfólio:
 
 ### 1. **Organização do Código**
