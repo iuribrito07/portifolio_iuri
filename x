@@ -1,6 +1,130 @@
 
 
+Seu CSS já está bem estruturado e cobre uma boa variedade de estilos. Com base no que você já tem, aqui estão algumas sugestões e ajustes que podem melhorar o design e a responsividade do seu portfólio:
 
+### Ajustes para Responsividade:
+O layout parece estar fixo em alguns pontos, como o posicionamento absoluto de elementos (`.nome-container`, `.botao`, `.redes-sociais`). Para melhorar a responsividade, sugiro utilizar `media queries` e ajustar o layout para telas menores.
+
+### Sugestão de Ajustes no CSS
+
+```css
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+    /* Ajustando o nome e profissão para telas menores */
+    .nome-container {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nome {
+        font-size: 2.5em;
+    }
+
+    .sobrenome {
+        font-size: 1.8em;
+    }
+
+    .profissao {
+        font-size: 1.2em;
+    }
+
+    /* Ajustando os botões */
+    .botao {
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Redes sociais para centralizar em telas menores */
+    .redes-sociais {
+        top: 85%;
+    }
+
+    /* Ajustando o layout flex nas seções */
+    .about, .resume, .portfolio {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .about-image, .about-content {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    /* Ajustando o container de habilidades */
+    .columns {
+        flex-direction: column;
+    }
+
+    .programing-languages, .frameworks-libraries {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Ajustando responsividade para telas menores que 480px */
+@media (max-width: 480px) {
+    .nome-container {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nome {
+        font-size: 1.8em;
+    }
+
+    .sobrenome {
+        font-size: 1.2em;
+    }
+
+    .profissao {
+        font-size: 1em;
+    }
+
+    .botao {
+        top: 60%;
+    }
+
+    .redes-sociais {
+        top: 70%;
+        transform: translateX(-50%);
+    }
+
+    .botao-acesso {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    .resume h2, .about h2, .portfolio h2, .text-contact {
+        font-size: 1.5em;
+    }
+
+    .resume p, .about p, .portfolio p {
+        font-size: 0.9em;
+    }
+}
+```
+
+### Melhorias na Estrutura:
+
+1. **Responsividade:**
+   - O layout responsivo vai se adaptar melhor a telas menores, como smartphones e tablets, ajustando o posicionamento dos elementos e as fontes de acordo com o tamanho da tela.
+
+2. **Espaçamentos e Alinhamento:**
+   - O espaçamento dos itens (como o nome, botões, e redes sociais) foi ajustado para se manter mais centralizado e visualmente atraente em diferentes tamanhos de tela.
+
+3. **Tipografia:**
+   - Reduzir o tamanho das fontes e o espaçamento em telas menores para que o conteúdo continue legível sem se sobrepor.
+
+Teste essas mudanças e veja como o layout se comporta em diferentes resoluções. Isso deve melhorar a usabilidade e a estética do seu portfólio em dispositivos variados.
 
 
 

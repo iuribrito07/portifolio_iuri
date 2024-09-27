@@ -383,3 +383,109 @@ footer {
     background: #333;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    /*Ajuste de proporção para telas menores (nome e profissão)*/
+    .nome-container {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nome {
+        font-size: 2.5em;
+    }
+
+    .sobrenome {
+        font-size: 1.8em;
+    }
+
+    .profissao {
+        font-size: 1.2em;
+    }
+
+    /* Ajustando os botões */
+
+    .botao {
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Redes sociais para centralizar em telas menores */
+
+    .redes-sociais {
+        top: 85%;
+    }
+
+    /* Ajustando o layout flex nas seções */
+
+    .about, .resume, .portfolio {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .about-image, .about-content {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    /* Ajustando o container de habilidades */
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .programing-languages, .frameworks-libraries {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nome-container {
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+    }
+
+    .nome {
+        font-size: 1.8em;
+    }
+
+    .sobrenome {
+        font-size: 1.2em;
+    }
+
+    .profissao {
+        font-size: 1em;
+    }
+
+    botao {
+        top: 60%;
+    }
+
+    .redes-sociais {
+        top: 70%;
+        transform: translateX(-50%);
+    }
+
+    .botao-acesso {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    .resume h2, .about h2, .portfolio h2, .text-contact {
+        font-size: 1.5em;
+    }
+
+    .resume p, .about p, .portfolio p {
+        font-size: 0.9em;
+    }
+}
