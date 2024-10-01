@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Iuri Brito, desenvolvedor web. Confira meus projetos e habilidades.">
+    <meta name="keywords" content="portfolio, iuri, brito, iuri brito,  desenvolvedor, web, desenvolvimento web">
+    <meta name="author" content="Iuri Brito - ISB">
     <link rel="stylesheet" type="text/css" href="./css/base.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,16 +21,16 @@
         <nav class="menu-principal">
             <!--Separação do menu lado esquerdo-->
             <ul id="m-lado-esquerdo"> 
-                <li><a href="#home" title="Início" aria-label="Início">Início</a></li>
-                <li><a href="#about" title="Sobre" aria-label="Sobre">Sobre</a></li>
-                <li><a href="#resume" title="Resumo" aria-label="Resumo">Resumo</a></li>
-                <li><a href="#portfolio" title="Portfólio" aria-label="Portfólio">Portfólio</a></li>
-                <li><a href="#contact" title="Contato" aria-label="Contato">Contato</a></li>
+                <li><a href="#home" title="Início" aria-label="Início" aria-labelledby="Início">Início</a></li>
+                <li><a href="#about" title="Sobre" aria-label="Sobre" aria-labelledby="Sobre">Sobre</a></li>
+                <li><a href="#resume" title="Resumo" aria-label="Resumo" aria-labelledby="Resumo">Resumo</a></li>
+                <li><a href="#portfolio" title="Portfólio" aria-label="Portfólio" aria-labelledby="Portfólio">Portfólio</a></li>
+                <li><a href="#contact" title="Contato" aria-label="Contato" aria-labelledby="Contato">Contato</a></li>
             </ul>
             <!--Separação do menu lado esquerdo-->
             <ul class="m-lado-direito"> 
-                <li><a href="https://wa.me/5571981906872" target="_blank" title="Contato via WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href="mailto:iuribritocontatos@gmail.com" target="_blank" title="Contato via E-mail" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="https://wa.me/5571981906872" target="_blank" rel="noopener noreferrer" title="Contato via WhatsApp" aria-label="WhatsApp" aria-labelledby="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="mailto:iuribritocontatos@gmail.com" target="_blank" rel="noopener noreferrer" title="Contato via E-mail" aria-label="E-mail"><i class="fa-solid fa-envelope" aria-labelledby="E-mail"></i></a></li>
             </ul>            
         </nav>
     </header>
@@ -36,7 +39,7 @@
         <!--Plano de Fundo-->
         <section class="plano-de-fundo-container">
             <div class="sombra"></div>
-            <img  class="fundo" src="./imagens/fundo.jpg" alt="Imagem de fundo do portifolio de Iuri Brito" loading="lazy">
+            <img  class="fundo" src="./imagens/fundo.jpg" alt="Imagem de fundo do portfolio de Iuri Brito" loading="lazy">
          </section>
          <!--Titulo e detalhes-->
         <section class="nome-container">
@@ -47,16 +50,15 @@
             <h3 class="profissao">Desenvolvedor WEB</h3>
         </section>
         <nav class="botao">
-            <a href="#resume" class="botao-acesso" title="Ir para Resumo" aria-label="Resumo">Resumo</a>
-            <a href="#portfolio" class="botao-acesso" title="Ir para Portfólio" aria-label="Portfólio">Portfólio</a>
+            <a href="#resume" class="botao-acesso" title="Ir para Resumo" aria-label="Resumo" aria-labelledby="Resumo">Resumo</a>
+            <a href="#portfolio" class="botao-acesso" title="Ir para Portfólio" aria-label="Portfólio" aria-labelledby="Portfólio">Portfólio</a>
         </nav>
-        </section>
         <!--Link para redes sociais-->
         <section class="redes-sociais">
             <ul id="link-redes-sociais">
-                <li><a href="https://www.linkedin.com/in/iuribrito07/" target="_blank" title="Meu perfil no LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://github.com/iuribrito07/" target="_blank" title="Meu perfil no GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.instagram.com/maquinavirutalinformatica/" target="_blank" title="Meu perfil no Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/iuribrito07/" target="_blank" rel="noopener noreferrer" title="Meu perfil no LinkedIn" aria-label="LinkedIn" aria-labelledby="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/iuribrito07/" target="_blank" rel="noopener noreferrer" title="Meu perfil no GitHub" aria-label="GitHub" aria-labelledby="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.instagram.com/maquinavirutalinformatica/" target="_blank" rel="noopener noreferrer" title="Meu perfil no Instagram" aria-label="Instagram" aria-labelledby="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
     </main>
     <!--Conteúdo Sobre-->
@@ -67,10 +69,10 @@
                 <div class="bordered-text">
                     <p>Olá! Meu nome é Iuri Brito e sou um apaixonado por tecnologia e desenvolvimento web. Desde jovem, sempre tive um fascínio por como as coisas funcionam por trás das telas, e foi essa curiosidade que me levou a me tornar um desenvolvedor web.</p>
                     <p>Atualmente, possuo experiência na área, onde tive a oportunidade de trabalhar em uma variedade de projetos, desde pequenos sites pessoais até aplicações web complexas para empresas. Minha expertise inclui tecnologias como HTML, CSS, JavaScript, além de frameworks modernos como React e Node.js.</p>
-                <p>Acredito que um bom desenvolvimento web vai além do código; ele deve oferecer uma experiência intuitiva e agradável para o usuário. Por isso, busco sempre entender as necessidades dos meus clientes e transformar suas ideias em soluções funcionais e esteticamente agradáveis.</p>
-                <p>Estou constantemente aprendendo e me atualizando sobre as novas tendências e tecnologias do mercado, pois acredito que a inovação é a chave para criar produtos que realmente se destacam. Meu objetivo é ajudar empresas a alcançar seus objetivos online, proporcionando soluções que não apenas atendam suas necessidades, mas que também proporcionem valor aos seus usuários.</p>
-                <p>Quando não estou programando, gosto de praticar esportes, jogar, assistir filmes e series e viajar, o que me ajuda a manter a mente aberta e sempre em busca de novas inspirações.</p>
-                <p>Estou sempre aberto a novas oportunidades e colaborações. Se você está procurando um desenvolvedor web dedicado, não hesite em entrar em contato!</p>
+                    <p>Acredito que um bom desenvolvimento web vai além do código; ele deve oferecer uma experiência intuitiva e agradável para o usuário. Por isso, busco sempre entender as necessidades dos meus clientes e transformar suas ideias em soluções funcionais e esteticamente agradáveis.</p>
+                    <p>Estou constantemente aprendendo e me atualizando sobre as novas tendências e tecnologias do mercado, pois acredito que a inovação é a chave para criar produtos que realmente se destacam. Meu objetivo é ajudar empresas a alcançar seus objetivos online, proporcionando soluções que não apenas atendam suas necessidades, mas que também proporcionem valor aos seus usuários.</p>
+                    <p>Quando não estou programando, gosto de praticar esportes, jogar, assistir filmes e series e viajar, o que me ajuda a manter a mente aberta e sempre em busca de novas inspirações.</p>
+                    <p>Estou sempre aberto a novas oportunidades e colaborações. Se você está procurando um desenvolvedor web dedicado, não hesite em entrar em contato!</p>
                 </div>
         </div>
         <div class="about-image">
@@ -85,42 +87,42 @@
                 <div class="programing-languages">
                     <h3>Linguagem de programação</h3>
                         <ul>
-                            <li><a href="#contact" title="HTML 5" aria-label="HTML 5"><i class="fa-brands fa-html5"></i> HTML 5</a></li>
-                            <li><a href="#contact" title="CSS 3" aria-label="CSS 3"><i class="fa-brands fa-css3-alt"></i> CSS 3</a></li>
-                            <li><a href="#contact" title="JavaScript" aria-label="Java Script"><i class="fa-brands fa-js"></i> JavaScript</a></li>
+                            <li><a href="#contact" title="HTML 5" aria-label="HTML 5" aria-labelledby="HTML 5"><i class="fa-brands fa-html5"></i> HTML 5</a></li>
+                            <li><a href="#contact" title="CSS 3" aria-label="CSS 3" aria-labelledby="CSS 3"><i class="fa-brands fa-css3-alt"></i> CSS 3</a></li>
+                            <li><a href="#contact" title="JavaScript" aria-label="Java Script" aria-labelledby="Java Script"><i class="fa-brands fa-js"></i> JavaScript</a></li>
                         </ul>
                 </div>
                 <div class="frameworks-libraries">
                     <h3 class="habilidades-extras">Frameworks e bibliotecas</h3>
                         <ul>
-                            <li><a href="#" target="_blank" title="React" aria-label="React"><i class="fa-brands fa-react"></i> React</a></li>
-                            <li><a href="#" target="_blank" title="Node-JS" aria-label="Node-JS"><i class="fa-brands fa-node-js"></i> Node JS</a></li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer" title="React" aria-label="React" aria-labelledby="React"><i class="fa-brands fa-react"></i> React</a></li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer" title="Node-JS" aria-label="Node JS" aria-labelledby="Node JS"><i class="fa-brands fa-node-js"></i> Node JS</a></li>
                         </ul>
                 </div>
             </div>
         </div>    
     </section>
-    <!--Conteúdo Portifolio-->
+    <!--Conteúdo Portfolio-->
     <section class="portfolio" id="portfolio">
         <h2 class="text-portfolio">Portfólio </h2>
             <div class="portfolio-container">
                 <article class="portfolio-item-1" onclick="openModal(0)">
-                    <img src="./imagens/landing-page-1.jpg" alt="Screenshot da Landing Page do Portifolio 1" loading="lazy">
-                    <h3>Portifolio 1 -  Landing Page</h3>
+                    <img src="./imagens/landing-page-1.jpg" alt="Screenshot da Landing Page do Portfolio 1" loading="lazy">
+                    <h3>Portfólio 1 -  Landing Page</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, maxime cum officiis ea, commodi nihil quibusdam nemo, quisquam repellendus tempora similique vitae! Amet illum possimus debitis, doloribus ex quaerat. Ad?</p>
-                    <a href="https://github.com/iuribrito07" target="_blank" title="Portifolio 1" aria-label="Portfólio 1" >Ver projeto</a>
+                    <a href="https://github.com/iuribrito07" target="_blank" rel="noopener noreferrer" title="Portfolio 1" aria-label="Portfólio 1" aria-labelledby="Portfólio 1" >Ver projeto</a>
                 </article>
                 <article class="portfolio-item-2" onclick="openModal(1)">
-                    <img src="./imagens/landing-page-2.jpg" alt="Screenshot da Landing Page do Portifolio 2" loading="lazy">
-                    <h3>Portifolio 2 -  Landing Page</h3>
+                    <img src="./imagens/landing-page-2.jpg" alt="Screenshot da Landing Page do Portfolio 2" loading="lazy">
+                    <h3>Portfólio 2 -  Landing Page</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, maxime cum officiis ea, commodi nihil quibusdam nemo, quisquam repellendus tempora similique vitae! Amet illum possimus debitis, doloribus ex quaerat. Ad?</p>
-                    <a href="https://github.com/iuribrito07" target="_blank" title="Portifolio 2" aria-label="Portfólio 2" >Ver projeto</a>
+                    <a href="https://github.com/iuribrito07" target="_blank" rel="noopener noreferrer" title="Portfolio 2" aria-label="Portfólio 2" aria-labelledby="Portfólio 2" >Ver projeto</a>
                 </article>
                 <article class="portfolio-item-3" onclick="openModal(2)">
-                    <img src="./imagens/landing-page-3.jpg" alt="Screenshot da Landing Page do Portifolio 3" loading="lazy">
-                    <h3>Portifolio 3 -  Landing Page</h3>
+                    <img src="./imagens/landing-page-3.jpg" alt="Screenshot da Landing Page do Portfolio 3" loading="lazy">
+                    <h3>Portfólio 3 -  Landing Page</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, maxime cum officiis ea, commodi nihil quibusdam nemo, quisquam repellendus tempora similique vitae! Amet illum possimus debitis, doloribus ex quaerat. Ad?</p>
-                    <a href="https://github.com/iuribrito07" target="_blank" title="Portifolio 3" aria-label="Portfólio 3" >Ver projeto</a>
+                    <a href="https://github.com/iuribrito07" target="_blank" rel="noopener noreferrer" title="Portfolio 3" aria-label="Portfólio 3" aria-labelledby="Portfólio 3" >Ver projeto</a>
                 </article>
             </div>
     </section>
@@ -128,14 +130,14 @@
     <section class="contact" id="contact">
         <h2 class="text-contact">Contato</h2>
             <div class="contact-container">
-                <form action="#" method="post">
+                <form id="contact-form" action="#" method="post" onsubmit="return handleSubmit(event)">
                     <div class="campo">
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" required placeholder="Informe seu nome" title="Seu Nome">
                     </div>
                     <div class="campo">
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required placeholder="Informe  seu email" title="seuemail@exemplo.com">
+                        <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com" title="Informe seu email">
                     </div>
                     <div class="campo">
                         <label for="telefone">Telefone:</label>
@@ -148,6 +150,7 @@
                     </div>
                     <button type="submit" class="botao-enviar">Enviar</button>
                 </form>
+                <div id="feedback-message" style="display:none; margin-top: 10px; color: green;" aria-live="polite"></div>
             </div>
     </section>
     <!--Modal-->
@@ -156,13 +159,20 @@
             <span class="close" onclick="closeModal()">&times;</span>
             <h2 id="modal-title"></h2>
             <p id="modal-description"></p>
-            <a id="modal-link" href="#" target="_blank">Ver projeto</a>
+            <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a>
         </div>
     </div>
 
     <!--Rodapé-->
     <footer>
-        <p class="footer-text"> &copy;<span id="current-year"></span> |ISB - Termos  de Uso | Desenvolvido por Iuri Brito <a href="https://github.com/iuribrito07" target="_blank" title="Link para o GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i>GitHub</a></p>
+        <ul id="acesso-rapido-rodape"> 
+            <li><a href="#home" title="Início" aria-label="Início" aria-labelledby="Início">Início</a></li>
+            <li><a href="#about" title="Sobre" aria-label="Sobre" aria-labelledby="Sobre">Sobre</a></li>
+            <li><a href="#resume" title="Resumo" aria-label="Resumo" aria-labelledby="Resumo">Resumo</a></li>
+            <li><a href="#portfolio" title="Portfólio" aria-label="Portfólio" aria-labelledby="Portfólio">Portfólio</a></li>
+            <li><a href="#contact" title="Contato" aria-label="Contato" aria-labelledby="Contato">Contato</a></li>
+        </ul>
+        <p class="footer-text"> &copy;<span id="current-year"></span> |ISB - Termos  de Uso | Desenvolvido por Iuri Brito <a href="https://github.com/iuribrito07" target="_blank" rel="noopener noreferrer" title="Link para o GitHub" aria-label="GitHub" aria-labelledby="GitHub"><i class="fa-brands fa-github"></i>GitHub</a></p>
     </footer>
 
     <!--Utilizando o JavaScript-->
@@ -173,13 +183,8 @@
         }
         updateYear();
 
-        //Aguardar o DOM estar completamente carregado
-        document.addEventListener('DOMContentLoaded', function(){
-            updateYear();//Chamar a função para atualizar o ano
-            });
-
         //Funções para o Modal
-        cont projects = [
+        const projects = [
             {
                 title: 'Portfólio 1',
                 description: "Esse é o portfólio 1",
@@ -207,6 +212,64 @@
         function closeModal() {
             document.getElementById('project-modal').style.display = "none";
         }
+
+        //Função para validar a mensagem de formulário enviado
+        function handleSubmit(event) {
+
+            event.preventDefault(); //Impede o envio padrão do formulário
+
+            const nome = document.getElementById('nome');
+            const email = document.getElementById('email');
+            const telefone = document.getElementById('telefone');
+            const mensagem = document.getElementById('mensagem');
+
+            let valid = true;
+
+            //validação do nome
+            if (nome.value.trim() === '') {
+                valid = false;
+                nome.style.border = '2px solid red'; //indica erro
+            } else {
+                nome.style.border = '2px solid green'; //indica sucesso
+            }
+
+            //validação do e-mail
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email.value)) {
+                valid = false;
+                email.style.border = '2px solid red';
+            } else {
+                email.style.border =  '2px solid green';
+            }
+
+            //Validação do telefone
+            const telefonePattern  = /^\(\d{2}\) \d{5}-\d{4}$/;
+            if (!telefonePattern.test(telefone.value)) {
+                valid = false;
+                telefone.style.border = '2px solid red';
+            } else {
+                telefone.style.border = '2px solid green';
+            }
+
+            //Validação da mensagem
+            if (mensagem.value.trim() === '') {
+                valid = false;
+                mensagem.style.border = '2px solid red';
+            } else {
+                mensagem.style.border = '2px solid green';
+            }
+
+            if (valid) {
+                //Exibir mensagem de feedback
+                const feedback = document.getElementById('feedback-message');
+                feedback.textContent = "Mensagem enviada com sucesso!";
+                feedback.style.display = "block"; //essa mensagem ficará visivel
+                document.getElementById('contact-form').reset();//Limpa o formulário
+            }
+
+            return false; //Evita que a pagina seja recarregada
+        }
+
     </script>
 </body>
 </html>
