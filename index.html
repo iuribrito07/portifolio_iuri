@@ -19,9 +19,14 @@
     <!--Menu Superior-->
     <header>
         <nav class="menu-principal">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <!--Separação do menu lado esquerdo-->
             <ul id="m-lado-esquerdo"> 
-                <li><a href="#home" title="Início" aria-label="Início" aria-labelledby="Início">Início</a></li>
+                <li><a href="#home" title="Início" aria-label="Início">Início</a></li>
                 <li><a href="#about" title="Sobre" aria-label="Sobre" aria-labelledby="Sobre">Sobre</a></li>
                 <li><a href="#resume" title="Resumo" aria-label="Resumo" aria-labelledby="Resumo">Resumo</a></li>
                 <li><a href="#portfolio" title="Portfólio" aria-label="Portfólio" aria-labelledby="Portfólio">Portfólio</a></li>
@@ -56,7 +61,7 @@
         <!--Link para redes sociais-->
         <section class="redes-sociais">
             <ul id="link-redes-sociais">
-                <li><a href="https://www.linkedin.com/in/iuribrito07/" target="_blank" rel="noopener noreferrer" title="Meu perfil no LinkedIn" aria-label="LinkedIn" aria-labelledby="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/iuribrito07/" target="_blank" rel="noopener noreferrer" title="Meu perfil no LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
                 <li><a href="https://github.com/iuribrito07/" target="_blank" rel="noopener noreferrer" title="Meu perfil no GitHub" aria-label="GitHub" aria-labelledby="GitHub"><i class="fa-brands fa-github"></i></a></li>
                 <li><a href="https://www.instagram.com/maquinavirutalinformatica/" target="_blank" rel="noopener noreferrer" title="Meu perfil no Instagram" aria-label="Instagram" aria-labelledby="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
@@ -177,6 +182,14 @@
 
     <!--Utilizando o JavaScript-->
     <script>
+        //Adicionando um menu "hamburguer"
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuPrincipal = document.querySelector('.menu-principal');
+
+        mobileMenu.addEventListener('click',() => {
+            menuPrincipal.classList.toggle('active');
+        });
+
         //Código para atualizar o ano no rodapé
         function updateYear () {
             document.getElementById('current-year').textContent = new Date ().getFullYear();

@@ -32,6 +32,20 @@ img {
     height: auto;
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
 .menu-principal {
     display: flex;
     justify-content: space-between;
@@ -263,12 +277,12 @@ h2 {
 
 .columns {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px;
 }
 
 .programing-languages, .frameworks-libraries {
-    flex: 1;
+    flex: 1 1 100%;
     margin-right: 20px;
 }
 
@@ -496,15 +510,37 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /*Ajuste de proporção para telas menores (nome e profissão)*/
+    /*Ajuste de proporção para telas menores*/
     .nome-container {
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
+    .menu-principal {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+
+    .menu-principal.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-principal ul {
+        width: 100%;
+    }
+
+    .menu-principal li {
+        width: 100%;
+    }
+
     .nome {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .sobrenome {
@@ -521,6 +557,12 @@ footer {
         top: 75%;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    /*Ajustando o layout flex nas seções*/
+    .about, .resume, .portfolio {
+        flex-direction: column;
+        padding: 20px 10px;
     }
 
     /* Redes sociais para centralizar em telas menores */
@@ -564,6 +606,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+    
+    .some-element {
+        display: none;
+    }
+
     .nome-container {
         top: 50%;
         left: 50%;
