@@ -18,18 +18,42 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .navegation {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .menu-principal {
     display: flex;
     align-items: center;
+    list-style: none;
+}
+
+.menu-principal ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-principal li {
+    margin: 0 15px;
+}
+
+.menu-principal a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.menu-principal a:hover {
+    color: #f39c12;
 }
 
 .menu-toggle {
@@ -185,6 +209,8 @@ footer {
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
+        flex-direction: column;
+        cursor: pointer;
     }
 
     .menu-principal {
