@@ -15,109 +15,110 @@ Primeiro, crie uma estrutura de pastas que ajude a organizar seus arquivos CSS. 
 └── index.html            // Seu arquivo HTML
 
 
+Claro! Vamos criar o arquivo  `responsive.css`  para garantir que seu portfólio se adapte bem a diferentes tamanhos de tela. O objetivo é tornar o layout flexível e acessível em dispositivos móveis, tablets e desktops. Aqui estão algumas sugestões de estilos que você pode incluir no  `responsive.css` .
 
-Claro! Vamos criar o arquivo  `components.css`  para estilizar os componentes do seu portfólio, como botões, cartões e outros elementos interativos. Aqui estão algumas sugestões de estilos que você pode incluir no  `components.css` .
 
-### Conteúdo do  `components.css`
-/* Estilos Gerais de Botões */
+Claro! Vamos criar um arquivo  `themes.css`  que permitirá aplicar diferentes temas ao seu portfólio. Isso pode incluir temas claros e escuros, ou até mesmo cores personalizadas que você queira usar. Aqui estão alguns exemplos de estilos que você pode incluir no  `themes.css` .
+
+### Conteúdo do  `themes.css`
+
+
+/* Estilos de Botões */
 .botao-acesso {
-    display: inline-block; /* Exibir como bloco inline */
-    padding: 10px 20px; /* Espaçamento interno */
-    margin: 5px; /* Margem entre os botões */
-    background-color: #007BFF; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    text-decoration: none; /* Remover sublinhado */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    background-color: var(--cor-botao);
 }
 
 .botao-acesso:hover {
-    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
-    transform: scale(1.05); /* Aumentar ligeiramente ao passar o mouse */
+    background-color: var(--cor-botao-hover);
 }
 
 /* Estilos para os Itens do Portfólio */
-.portfolio-container {
-    display: flex; /* Usar flexbox para o layout */
-    flex-wrap: wrap; /* Permitir que os itens se ajustem em várias linhas */
-    justify-content: center; /* Centralizar os itens */
-    margin-top: 20px; /* Espaçamento acima do contêiner */
-}
-
 .portfolio-item-1,
 .portfolio-item-2,
 .portfolio-item-3 {
-    background: #fff; /* Cor de fundo dos itens */
-    border: 1px solid #ddd; /* Borda leve */
-    border-radius: 5px; /* Bordas arredondadas */
-    margin: 10px; /* Margem entre os itens */
-    padding: 15px; /* Espaçamento interno */
-    width: 300px; /* Largura fixa dos itens */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: transform 0.3s; /* Transição suave para a transformação */
-}
-
-.portfolio-item-1:hover,
-.portfolio-item-2:hover,
-.portfolio-item-3:hover {
-    transform: translateY(-5px); /* Levantar o item ao passar o mouse */
-}
-
-/* Estilos para o Modal */
-.modal-content {
-    background: #fff; /* Fundo branco para o conteúdo do modal */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas arredondadas */
-    text-align: center; /* Centralizar texto */
-}
-
-.modal-content h2 {
-    margin: 0 0 10px; /* Margem abaixo do título */
-}
-
-.modal-content p {
-    margin: 0 0 15px; /* Margem abaixo da descrição */
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 2px 5px var(--cor-sombra);
 }
 
 /* Estilos para o Formulário de Contato */
-.contact-container {
-    display: flex; /* Usar flexbox para o layout do formulário */
-    flex-direction: column; /* Alinhar os campos verticalmente */
-    max-width: 400px; /* Largura máxima do formulário */
-    margin: auto; /* Centralizar o formulário */
-}
-
-.campo {
-    margin-bottom: 15px; /* Espaçamento entre os campos */
-}
-
-.campo label {
-    display: block; /* Exibir o rótulo como bloco */
-    margin-bottom: 5px; /* Margem abaixo do rótulo */
-}
-
 .campo input,
 .campo textarea {
-    width: 100%; /* Largura total dos campos */
-    padding: 10px; /* Espaçamento interno */
-    border: 1px solid #ccc; /* Borda leve */
-    border-radius: 5px; /* Bordas arredondadas */
-    font-size: 1rem; /* Tamanho da fonte */
-    transition: border-color 0.3s; /* Transição suave para a borda */
-}
-
-.campo input:focus,
-.campo textarea:focus {
-    border-color: #007BFF; /* Cor da borda ao focar */
-    outline: none; /* Remover contorno padrão */
+    border: 1px solid var(--cor-borda);
 }
 
 /* Estilos para a Mensagem de Feedback */
 #feedback-message {
-    margin-top: 10px; /* Espaçamento acima da mensagem de feedback */
-    color: green; /* Cor do texto da mensagem de feedback */
-    font-weight: bold; /* Negrito para destacar */
+    color: green; /* Pode ser ajustado para se adequar ao tema */
 }
+### Explicação dos Estilos
+
+1. **Temas Definidos por Variáveis**: Utilizamos variáveis CSS ( `--cor-fundo` ,  `--cor-texto` , etc.) para definir as cores do tema claro e escuro. Isso facilita a troca de temas, já que você só precisa alterar as variáveis.
+
+2. **Tema Claro e Escuro**: O tema claro é o padrão, enquanto o tema escuro é ativado adicionando o atributo  `data-theme='dark'`  ao elemento  `<html>`  ou  `<body>` . Isso pode ser feito com JavaScript para permitir que os usuários alternem entre os temas.
+
+3. **Aplicação das Variáveis**: As variáveis são aplicadas em várias partes do CSS, como o corpo, cabeçalho, rodapé, botões e itens do portfólio, garantindo que a mudança de tema seja consistente em todo o site.
+
+### Como Implementar a Troca de Tema
+
+Para permitir que os usuários alternem entre os temas, você pode usar um pouco de JavaScript. Aqui está um exemplo simples:
+const toggleThemeButton = document.getElementById('toggle-theme');
+
+toggleThemeButton.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+});
+### Conclusão
+
+Com esse conteúdo para o  `themes.css` , você terá um sistema de temas que pode ser facilmente implementado e utilizado em seu portfólio. Se precisar de mais ajustes ou tiver outras perguntas, sinta-se à vontade para perguntar!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Explicação dos Estilos
+
+1. **Estilos Gerais para Telas Pequenas**: A primeira media query ( `max-width: 768px` ) aplica estilos a dispositivos como tablets e smartphones. Ajusta o layout do cabeçalho, tornando-o vertical e escondendo o menu até que o botão hamburguer seja clicado. Também centraliza o conteúdo e ajusta tamanhos de fonte e largura dos itens do portfólio.
+
+2. **Estilos para Telas Muito Pequenas**: A segunda media query ( `max-width: 480px` ) faz ajustes adicionais para smartphones. Reduz ainda mais os tamanhos de fonte e o padding do modal, garantindo uma boa legibilidade e usabilidade.
+
+### Conclusão
+
+Com esse conteúdo para o  `responsive.css` , seu portfólio deve se adaptar bem a diferentes tamanhos de tela, proporcionando uma boa experiência para os usuários em dispositivos móveis e tablets. Se precisar de mais ajustes ou tiver outras perguntas, sinta-se à vontade para perguntar!
+
+
+
+
+
+
+### Revisão
+
+1. **Correção de Erro**: O erro de digitação na propriedade  `transition`  foi corrigido.
+   
+2. **Estruturas e Estilos**: O código parece bem estruturado e segue boas práticas de CSS, como o uso de flexbox para layout, transições suaves e estilização clara para componentes interativos.
+
+3. **Consistência**: Os estilos são consistentes e devem funcionar bem para os botões, itens do portfólio, modal e formulário de contato.
+
+Se você precisar de mais ajustes ou tiver mais perguntas sobre a estilização, sinta-se à vontade para perguntar!
+
+
+
 ### Explicação dos Estilos
 
 1. **Estilos Gerais de Botões**: Define a aparência dos botões, incluindo cor de fundo, cor do texto, bordas arredondadas e efeitos de hover.

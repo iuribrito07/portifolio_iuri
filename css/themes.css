@@ -1,0 +1,65 @@
+/* Tema Claro*/
+
+:root {
+    --cor-fundo: #ffffff;
+    --cor-texto: #333333;
+    --cor-botao: #007bff;
+    --cor-botao-hover: #0056b3;
+    --cor-borda: #ddd;
+    --cor-sombra: rgba(0, 0, 0, 0.1);
+}
+
+/*Tema Escuro */
+[data-theme='dark'] {
+    --cor-fundo: #ffffff;
+    --cor-texto: #333333;
+    --cor-botao: #007bff;
+    --cor-botao-hover: #0056b3;
+    --cor-borda: #ddd;
+    --cor-sombra: rgba(0, 0, 0, 0.5);
+}
+
+/*Aplicando as variaveis de tema*/
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+header {
+    background-color: var(--cor-fundo);
+}
+
+footer {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/*Estilos de botões*/
+
+.botao-acesso {
+    background-color: var(--cor-botao);
+}
+
+.botao-acesso:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+/*Estios para os itens do portfolio*/
+
+.portfolio-item-1, .portfolio-item-2, .portfolio-item-3 {
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 2px 5px var(--cor-sombra);
+}
+
+/*Estilos para o formulário de contato */
+
+.campo input, .campo textarea {
+    border: 1px solid var(--cor-borda);
+}
+
+/*Estilos para mensagem de feedback*/
+
+#feedback-message {
+    color: green;
+}

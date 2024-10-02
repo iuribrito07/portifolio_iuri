@@ -1,0 +1,91 @@
+/* Estilos Responsivos*/
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .navegation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .menu-principal {
+        display: none;
+        width: 100%;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .menu-principal.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nome-container {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .nome {
+        font-size: 2.5rem;
+    }
+
+    .sobrenome {
+        font-size: 2rem;
+    }
+
+    .profissao {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-item-1, .portfolio-item-2, .portfolio-item-3 {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .contact-container {
+        max-width: 100%;
+    }
+
+    .botao-acesso {
+        width: 100%;
+    }
+}
+
+/*Estilos para telas muito pequenas*/
+
+@media (max-width 480px) {
+    .nome {
+        font-size: 2rem;
+    }
+
+    .sobrenome {
+        font-size: 1.5rem;
+    }
+
+    .profissao {
+        font-size: 1rem;
+    }
+
+    .campo input, .campo textarea {
+        font-size: 0.9rem;
+    }
+
+    .modal-content {
+        padding: 15px;
+    }
+}
