@@ -1,0 +1,220 @@
+/*Estilos globais*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans, sans-serif';
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/*Estilos do Header*/
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navegation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-principal {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/*Estilos do Main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/*Estilos da seção de fundo*/
+
+.plano-de-fundo-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.sombra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.fundo {
+    width: 100%;
+    height: auto;
+}
+
+/*Estilos do nome e profissão*/
+
+.nome-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.nome {
+    font-size: 3rem;
+}
+
+.sobrenome {
+    font-size: 2rem;
+}
+
+.profissao {
+    font-size: 1.5rem;
+}
+
+/*Estilos dos botões*/
+
+.botao {
+    margin-top: 20px
+}
+
+.botao-acesso {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botao-acesso:hover {
+    background-color: #0056b3;
+}
+
+/*Estilos das redes sociais*/
+
+.redes-sociais {
+    margin-top: 20px;
+}
+
+#link-redes-sociais {
+    list-style: none;
+    margin: 0 10px;
+}
+
+#link-redes-sociais li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/*Estilos do footer*/
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-text {
+    margin: 0;
+}
+
+/*Estilos para o modal*/
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+/*Responsividade*/
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-principal {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #333;
+        width: 100%;
+    }
+
+    .menu-principal.active {
+        display: flex;
+    }
+
+    .nome {
+        font-size: 2rem;
+    }
+
+    .sobrenome {
+        font-size: 1.5rem;
+    }
+
+    .profissao {
+        font-size: 1.2rem;
+    }
+
+    .botao-acesso {
+        padding: 8px 15px;
+    }
+}
+
